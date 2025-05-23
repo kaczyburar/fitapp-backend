@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-ek^&*!5v&%j)(z8jkrm(pgffuz@04=bu!&p#o1!yu73*$v)7y!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'fitapp-backend-o3r3.onrender.com',
+    'localhost',
+    '127.0.0.1',
+    '.onrender.com',  # To pozwoli na wszystkie subdomeny onrender.com
+]
 
 
 # Application definition
