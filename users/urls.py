@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import RegisterView, MeView, buy_premium
+from .views import RegisterView, MeView, buy_premium, hello_world
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 urlpatterns = [
@@ -8,4 +8,5 @@ urlpatterns = [
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('me/', MeView.as_view(), name='me'),
     path('buy', buy_premium),
+    path('hello/', hello_world, name='hello'),  # /hello/
 ]

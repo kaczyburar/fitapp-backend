@@ -28,3 +28,6 @@ def buy_premium(request):
     user.is_premium = True
     user.save()
     return Response({"message": "Dostęp premium przyznany!"})
+
+def hello_world(request):
+    return HttpResponse("<h1>Witaj świecie!</h1><p>Aplikacja Django działa na Render! 🎉</p>")
